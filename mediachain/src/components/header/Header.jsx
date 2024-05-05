@@ -13,8 +13,8 @@ function Header() {
                 </div>
 
                 <div className="button-container">
-                    <button className="button"><Link to="/register">Register</Link></button>
-                    <button className="button"><Link to="/login">Login</Link></button>
+                    <Link to="/register"><button className="button">Register</button></Link>
+                    <Link to="/login"><button className="button">Login</button></Link>
                 </div>
             </div>
         </>

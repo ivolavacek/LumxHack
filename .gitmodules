@@ -1,0 +1,6 @@
+[submodule "smartcontract/lib/forge-std"]
+	path = smartcontract/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "smartcontract/lib/openzeppelin-contracts"]
+	path = smartcontract/lib/openzeppelin-contracts
+	url = https://github.com/Openzeppelin/openzeppelin-contracts
