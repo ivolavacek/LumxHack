@@ -8,6 +8,8 @@ button {
   background-color: #555;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-decoration: none;
+
 }
 
 button:hover {
@@ -17,4 +19,8 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.all {
+  font-family: Georgia, sans-serif;
 }
