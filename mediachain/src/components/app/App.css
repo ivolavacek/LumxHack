@@ -9,5 +9,180 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #FFC509);
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.div1 {
+  min-height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+}
+
+.container-div1 {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.logo-div {
+  height: 100px;
+  margin-right: 15px;
+}
+
+.name-div {
+  height: 60px;
+  margin-left: 15px;
+}
+
+.text1 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+.text2 {
+  color: white;
+  font-size: 32px;
+  padding: 10px;
+  text-align: center;
+}
+
+.bullets {
+  margin-top: 30px;
+  color: white;
+  font-size: 22px;
+}
+
+.div2 {
+  min-height: 500px;
+  background-color: #bbb;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-div2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 1000px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.div3 {
+  height: 400px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle-div3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.evento {
+  text-align: center;
+}
+
+.patrocinadores {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.lumx {
+  height: 100px;
+}
+
+.sponsor {
+  height: 50px;
+  padding: 20px;
+}
+
+.div4 {
+  height: 350px;
+  background-color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-div4 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.membro {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.membros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nome-membro {
+  color: white;
+  padding: 10px;
+}
+
+.funcao-membro {
+  color: white;
 }
