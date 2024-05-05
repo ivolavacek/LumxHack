@@ -1,4 +1,3 @@
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -22,6 +21,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Courier New', 'Monaco', 'Fira Sans', 'Roboto', 'Source Code Pro', 'Menlo', 'Consolas',
+    'Ubuntu', 'Cantarell', 'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,11 +43,6 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     color: #fff;
-}
-
-body {
-    min-height: 100vh;
-    background-color: yellow;
 }
 
 .App {
@@ -55,7 +61,6 @@ section {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     padding: 1rem;
     background-color: #FFC509;
 }
