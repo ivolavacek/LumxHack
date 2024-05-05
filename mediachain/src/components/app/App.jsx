@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from '../../images/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from '../header/Header.jsx'
 import background from '../../images/background3.jpg'
@@ -16,13 +13,15 @@ import perfilCarlos from '../../images/perfil-carlos-junior.jpeg'
 import perfilFlavia from '../../images/perfil-flavia-firmino.png'
 import perfilIvo from '../../images/perfil-ivo-lavacek.jpg'
 import perfilJoao from '../../images/perfil-joao-rodrigo.jpg'
+import { Outlet } from "react-router-dom";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
       <Header />
+
       <div className="div1">
         <div className="container-div1">
           <img src={logo} alt="logo" class="logo-div" />
@@ -113,6 +112,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Outlet />
+      
     </>
   )
 }
