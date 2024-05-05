@@ -7,6 +7,7 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 
@@ -16,12 +17,14 @@
   float: left;
 }
 
-.logo {
+.logo-header {
   height: 50px;
+  margin-left: 20px;
 }
 
-.name {
+.name-header {
   height: 30px;
+  margin-left: 15px;
 }
 
 .button-container {
