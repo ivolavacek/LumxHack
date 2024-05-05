@@ -1,4 +1,3 @@
-import './Home.css'
 import background from '../../images/background3.jpg'
 import logo from '../../images/logo1.png'
 import name from "../../images/project-name1.png"
