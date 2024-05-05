@@ -1,12 +1,15 @@
 import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import axios from 'axios';
 
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 const Register = () => {
     const emailRef = useRef();
     const errRef = useRef();
+
+    const [lumxId, setLumxId] = useState('');
 
     const [email, setEmail] = useState('');
     const [validEmail, setValidEmail] = useState(false);
@@ -51,20 +54,22 @@ const Register = () => {
         }
         // Back-end
         try {
-            const response = await axios.post(REGISTER_URL,
-                JSON.stringify({ user, pwd }),
+            const response = await axios.post('http://localhost:3000/register',
+                JSON.stringify({ email, pwd }),
                 {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
-                }
-            );
+                })
+                
+            setLumxId(response.data);
 
             setSuccess(true);
             //clear state and controlled inputs
             //need value attrib on inputs for this
-            setUser('');
+            setEmail('');
             setPwd('');
             setMatchPwd('');
+
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');
@@ -77,16 +82,13 @@ const Register = () => {
         }
     }
 
-    console.log("validEmail:", validEmail);
-    console.log("validPwd:", validPwd);
-    console.log("validMatch:", validMatch);
-
     return(
         <>
             {success ? (
                 <section>
                     <h1>Account created!</h1>
                     <h2>Welcome to Mediachain</h2>
+                    <p>Your id is {lumxId}</p>
                     <p>
                         <a href="/login">Login</a>
                     </p>
