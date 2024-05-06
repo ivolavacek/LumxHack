@@ -6,11 +6,12 @@
     justify-content: center;
 }
 
-.fundo-c {
-    height: 1200px;
-    width: 1200px;
-    background-color: #999;
-    display: flex;
+.to-be-announced {
+    display: flex; 
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #000;
+    font-size: 40px;
 }

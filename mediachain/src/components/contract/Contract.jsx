@@ -9,7 +9,7 @@ function Contract() {
                 <Link to="/contract"><button className="button">Contract</button></Link>
             </div>
             
-            <div className="fundo-c"></div>
+            <div className="to-be-announced">To be developed</div>
         </>
     );
 }
