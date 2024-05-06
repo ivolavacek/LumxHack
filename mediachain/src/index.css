@@ -9,11 +9,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   text-decoration: none;
-
-}
-
-button:hover {
-  border-color: black;
+  
 }
 
 button:focus,
@@ -61,6 +57,7 @@ section {
     min-height: 400px;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
     padding: 1rem;
     background-color: #FFC509;
 }
@@ -74,7 +71,7 @@ form {
 }
 
 a, a:visited {
-    color: #fff;
+    color: #941344;
 }
 
 input[type="text"],

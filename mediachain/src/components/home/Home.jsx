@@ -1,5 +1,5 @@
-import background from '../../images/background3.jpg'
-import logo from '../../images/logo1.png'
+import './Home.css'
+import logo from '../../images/logo.png'
 import name from "../../images/project-name1.png"
 import lumx from '../../images/lumxhack-logo-ethrio.png'
 import tanssi from '../../images/tanssi-logo.png'
@@ -95,7 +95,7 @@ function Home() {
                 </div>
 
                 <div className="patrocinadores">
-                <div className="subtitle-div3">Sponsors</div>
+                <div className="subtitle-div31">Sponsors</div>
                 <div className="sponsors">
                     <img src={tanssi} alt="tanssi-logo" class="sponsor" />
                     <img src={chiliz} alt="chiliz-logo" class="sponsor" />

@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './Register.css'
 
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
@@ -83,6 +84,7 @@ const Register = () => {
 
     return(
         <>
+        <div className="registro">
             {success ? (
                 <section>
                     <h1>Account created!</h1>
@@ -94,7 +96,7 @@ const Register = () => {
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h1>Register</h1>
+                    <div className="title-register">Register</div>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="email">
                             Email:
@@ -170,11 +172,12 @@ const Register = () => {
                         Already registered?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a href="/login">Log In</a>
+                            <a className="login" href="/login">Log In</a>
                         </span>
                     </p>
                 </section>
             )}
+        </div>
         </>
     )
 }

@@ -1,0 +1,14 @@
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.title-register {
+    align-items: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
