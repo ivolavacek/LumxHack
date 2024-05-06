@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './components/app/App.jsx'
 import './index.css'
+import App from './components/app/App.jsx'
 import Home from './components/home/Home.jsx';
+import Login from './components/login/Login.jsx';
+import Dash from './components/dash/Dash.jsx';
+import Contract from './components/contract/Contract.jsx';
+import Register from './components/register/Register.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Login from './components/login/Login.jsx';
-import Register from './components/register/Register.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/dash",
+        element: <Dash />,
+      },
+      {
+        path: "/contract",
+        element: <Contract />,
       },
       {
         path: "/register",

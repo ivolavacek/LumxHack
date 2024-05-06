@@ -10,7 +10,7 @@ const options = {method: 'POST', headers: {Authorization: 'Bearer eyJhbGciOiJSUz
 const app = express();
 const port = 3000;
 const corsOptions = {
-    origin: 'http://localhost:5176', // Change this to your frontend origin
+    origin: 'http://localhost:5173', // Change this to your frontend origin
     credentials: true // Enable credentials (cookies, authorization headers, etc.)
   };
 app.use(cors(corsOptions));

@@ -1,15 +1,17 @@
-import './Login.css'
+import './Contract.css'
 import { Link } from 'react-router-dom'
 
-function Login() {
+function Contract() {
     return(
         <>
             <div className="menu-container">
                 <Link to="/dash"><button className="button">Dashboard</button></Link>
                 <Link to="/contract"><button className="button">Contract</button></Link>
             </div>
+            
+            <div className="fundo-c"></div>
         </>
     );
 }
 
-export default Login;
+export default Contract;
