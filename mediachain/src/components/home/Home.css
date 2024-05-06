@@ -40,9 +40,27 @@
   }
   
   .bullets {
-    margin-top: 30px;
-    color: #941344;
-    font-size: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px
+  }
+
+  .square {
+    background-color: #941344;
+    height: 150px;
+    width: 250px;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .square p {
+    margin: auto;
+    text-align: center;
   }
   
   .div2 {
@@ -58,7 +76,7 @@
   .title-div2 {
     font-size: 40px;
     font-weight: bold;
-    padding: 40px;
+    padding: 30px;
     color: #000;
   }
   
@@ -75,10 +93,12 @@
   .title {
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 10px;
   }
   
   .text {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 20px;
   }
   
   .div3 {

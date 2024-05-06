@@ -1,6 +1,6 @@
 import './Home.css'
 import logo from '../../images/logo.png'
-import name from "../../images/project-name1.png"
+import name from "../../images/project-name3.png"
 import lumx from '../../images/lumxhack-logo-ethrio.png'
 import tanssi from '../../images/tanssi-logo.png'
 import chiliz from '../../images/chilliz-logo.png'
@@ -23,9 +23,9 @@ function Home() {
                 <div className="text1">Manage copyright for any type of media</div>
                 <div className="text2">Films, series, videos and audio</div>
                 <div className="bullets">
-                <li>Tokenize your content with Blockchain</li>
-                <li>Track your earnings and royalties distribution</li>
-                <li>Get transparent contracts with your coworkers</li>
+                    <div className="square"><p>Tokenize your content with Blockchain</p></div>
+                    <div className="square"><p>Track your earnings and royalties distribution</p></div>
+                    <div className="square"><p>Get transparent contracts with your coworkers</p></div>
                 </div>
             </div>
 
@@ -34,7 +34,7 @@ function Home() {
                 <div className="features-grid">
                 <div className="feature">
                     <p className="title">Enables collaboration</p>
-                    <p className="text">Create customized contracts and help governance for all project stakeholders</p>
+                    <p className="text">Create customized contracts with all project stakeholders</p>
                 </div>
                 <div className="feature">
                     <p className="title">Creates transparency</p>
